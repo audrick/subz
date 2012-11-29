@@ -1,0 +1,12 @@
+
+<h1>ENTRANCES PAGE EXISTS!</h1>
+
+<ul>
+<% @subways.each do |subway| %>
+
+    <li><h3><%= subway.name %></h3></li>
+    <li><%= subway.lat %></li>
+    <li><%= subway.long %></li>
+    <li><%= subway.line %></li>
+    <% end %>
+  </ul>
