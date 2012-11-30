@@ -1,5 +1,6 @@
 
-<h1>ENTRANCES PAGE EXISTS!</h1>
+<%= render :partial => 'map', :locals => {:lat => 40.686728331, :long => -73.9902719989999, :zoom => 12} %>
+<%= render :partial => 'pin', :collection => @subways, :as => :subway %>
 
 <ul>
 <% @subways.each do |subway| %>
