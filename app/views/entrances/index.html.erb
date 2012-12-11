@@ -1,12 +1,9 @@
 <div id="search">
   <%= form_tag '/search', :remote => true do %>
-    <%= text_field_tag 'query',  nil, :placeholder => 'Search for a subway line' %>
+    <%= text_field_tag 'query', nil, :placeholder => 'Search for a subway line' %>
   <% end %>
-
-
-
-
 </div>
+
 <div id="map">
   <div id="map_canvas"></div>
 </div>

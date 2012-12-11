@@ -5,10 +5,10 @@ gem 'rails', '3.2.9'
 gem 'httparty'
 gem 'jquery-rails'
 gem 'pg'
+gem 'thin'
 
 group :development, :test do
   gem 'pry-rails'
-  gem 'thin'
 end
 
 group :development do
