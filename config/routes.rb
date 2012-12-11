@@ -1,8 +1,9 @@
 Subz::Application.routes.draw do
 
-  get '/populate' => 'populate#index'
+  get '/' => 'populate#index'
   post '/populate' => 'populate#create'
   get '/entrances' => 'entrances#index'
+  post '/search' => 'entrances#search'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

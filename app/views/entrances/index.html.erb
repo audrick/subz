@@ -1,13 +1,12 @@
+<div id="search">
+  <%= form_tag '/search', :remote => true do %>
+    <%= text_field_tag 'query',  nil, :placeholder => 'Search for a subway line' %>
+  <% end %>
 
-<%= render :partial => 'map', :locals => {:lat => 40.686728331, :long => -73.9902719989999, :zoom => 12} %>
-<%= render :partial => 'pin', :collection => @subways, :as => :subway %>
 
-<ul>
-<% @subways.each do |subway| %>
 
-    <li><h3><%= subway.name %></h3></li>
-    <li><%= subway.lat %></li>
-    <li><%= subway.long %></li>
-    <li><%= subway.line %></li>
-    <% end %>
-  </ul>
+
+</div>
+<div id="map">
+  <div id="map_canvas"></div>
+</div>

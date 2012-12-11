@@ -13,4 +13,8 @@
 
 class Subway < ActiveRecord::Base
   attr_accessible :name, :line, :long, :lat
+
+  def self.text_search(query) 
+    self.where("name @@ :q or line @@ :q", :q => query)
+  end # :q is a key that means 'query'
 end

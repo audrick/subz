@@ -19,3 +19,10 @@ class PopulateController < ApplicationController
 end
 
 
+# cleaner way of doing above: 
+#     z = y['data'].each do |z|
+      # @name = z[-3]
+      # @line = z[-1]
+      # @long = z[-4][2].to_f
+      # @lat = z[-4][1].to_f
+#
