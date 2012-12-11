@@ -1,9 +1,0 @@
----
-nyc_icon.png: nyc_icon-277a9ce776467e8c82738286f112bf5e.png
-nyc_icon/index.png: nyc_icon-277a9ce776467e8c82738286f112bf5e.png
-rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-application.js: application-07bbc250ccd2065277e6d6b7f3bd967e.js
-application/index.js: application-07bbc250ccd2065277e6d6b7f3bd967e.js
-application.css: application-f519b1168c990948cbf94e4c51f6560f.css
-application/index.css: application-f519b1168c990948cbf94e4c51f6560f.css
