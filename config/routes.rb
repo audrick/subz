@@ -1,7 +1,7 @@
 Subz::Application.routes.draw do
 
   get '/' => 'populate#index'
-  post '/populate' => 'populate#create'
+  get '/populate' => 'populate#create'
   get '/entrances' => 'entrances#index'
   post '/search' => 'entrances#search'
 
