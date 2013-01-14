@@ -22,7 +22,7 @@ function display_map(lat, long, zoom)
 function add_marker(lat, long, title)
 {
   var latlng = new google.maps.LatLng(lat, long);
-  var marker = new google.maps.Marker({position: latlng, map: map, title:title, icon: '/assets/nyc_icon.png'});
+  var marker = new google.maps.Marker({position: latlng, map: map, title:title, icon: '/assets/train.png'});
 } //  #map_canvas is div where map will go
 // for different icon marker add comma after title, and include: icon: '/assets/icons/___.png'
 // these options are available via google maps API
