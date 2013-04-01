@@ -12,7 +12,7 @@ class PopulateController < ApplicationController
       @line = z[-1]
       @long = z[-4][2]
       @lat = z[-4][1]
-      @subway = Subway.create(:name => @name, :lat => @lat, :long => @long, :line => @line)
+      @subway = Subway.find_or_create_by_name(:name => @name, :lat => @lat, :long => @long, :line => @line)
     end
     redirect_to entrances_path
   end
